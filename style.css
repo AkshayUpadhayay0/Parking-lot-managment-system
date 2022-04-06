@@ -1,0 +1,61 @@
+body{
+     background-color: whitesmoke;
+}
+header{
+     background-color: lightskyblue;
+}
+.tbl{
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     margin: 20px;
+     padding: 20px;
+     border-radius: 21px;
+}
+table{
+     width: 100%;
+     
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+.btn{
+     border: solid beige;
+     border-radius: 21px;
+}
+.btn:hover{
+     border: solid black;
+     background-color: beige;
+}
+.banner img{
+     margin: 20px;
+     padding: 20px;
+     align-items: center;
+     width: 300px;
+     height: 300px;
+}
+
+.content .col{
+     height: 500px;
+     margin: 50px;
+     padding: 20px;
+     overflow: scroll;
+     background-color: white;
+     border-radius: 21px;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+     
+}
+
+
+#footer {
+     width: 100%;
+     left: 0px;
+     bottom: 0px;
+     background-color: lightskyblue;
+     text-align: center;
+
+}
+
+.copy {
+     text-align: center;
+}
+
