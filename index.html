@@ -17,152 +17,129 @@
      <link rel="stylesheet" href="style.css">
 </head>
 
-<body align="center">
-     <header>
+<body>
+     <div class="navbar navbar-expand-lg navbar-dark sticky-top bg-black">
           <div class="container-fluid">
-               <div class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                         <a class="navbar-brand">Parking_Lot</a>
-                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false"
-                              aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                         </button>
-                         <div class="collapse navbar-collapse" id="navbarNav">
-                              <ul class="navbar-nav">
-                                   <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="#abo">About Us</a>
-                                   </li>
-                                   <li class="nav-item">
-                                        <a class="nav-link" href="#cnt">Contact Us</a>
-                                   </li>
-                              </ul>
-                         </div>
-                    </div>
-               </div>
-               <div class="hero">
-                    <div class="row">
-                         <div class="col">
-                              <div class="tbl">
-                                   <table>
-                                        <tr>
-                                             <td><label for="name">Name :</label></td>
-                                             <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                             <td><label for="vname">Vehicle Name :</label></td>
-                                             <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                             <td><label for="vno">Vehicle No. :</label></td>
-                                             <td><input type="text"></td>
-                                        </tr>
-                                        <tr>
-                                             <td><label for="entry">Entry Date :</label></td>
-                                             <td><input type="date"></td>
-                                        </tr>
-                                        <tr>
-                                             <td><label for="exit">Exit Date :</label></td>
-                                             <td><input type="date"></td>
-                                        </tr>
-                                   </table>
-                                   <input class="btn" type="button" value="SUBMIT">
-                              </div>
-                         </div>
-                         <div class="col d-none d-md-block" align="center">
-                              <div class="banner">
-                                   <img src="logo.png" alt="">
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </header>
-
-     <div class="content" align="center">
-          <div class="container-fluid">
-               <div class="row">
-                    <div class="col">
-                         <h1>Details</h1>
-                    </div>
-               </div>
-          </div>
-     </div>
-
-     <!-- ******************** FOOTER ********************************** -->
-     <div id="footer">
-          <footer>
-               <div class="container-fluid">
-                    <div class="row">
-                         <div class="col-lg-4">
-                              <div class="about" id="abo">
-                                   <h3>About</h3>
-                                   <p><b>Parking Lot Management System</b>, This project will feature registrations of
-                                        Vehicle on the parking lot with keeping their number plate, name and entry and exit
-                                        timing and also list all the Vehicle in the parking lot. </p>
-                              </div>
-                         </div>
-                         <div class="col-lg-4">
-                              <h3>Team</h3>
-                              <li>Member 1</li>
-                              <li>Member 2</li>
-                              <li>Member 3</li>
-                              <li>Member 4</li>
-                         </div>
-                         <div class="col-lg-4" id="cnt">
-                              <h3>Contact Us</h3>
-                              <h6>parking lot manager</h6>
-                              <h6><i class="bi bi-telephone-fill"></i> +91 XXXXXXXXXX</h6>
-                              <h6><i class="bi bi-envelope-fill"></i> parkinglot@gmail.com</h6>
-                         </div>
-                    </div>
-                    <hr>
-                    <div class="copy">
-                         Designed and Developed by <cite>@Akshay Upadhayay</cite>
-                         <div class="sologo">
-                              <a class="bi bi-facebook" href="#"></a>
-                              <a class="bi bi-twitter" href="#"></a>
-                              <a class="bi bi-youtube" href="#"></a>
-                              <a class="bi bi-instagram" href="#"></a>
-                         </div>
-                    </div>
-               </div>
-          </footer>
-     </div>
-</body>
-
-</html>
-
-
-
-
-<!-- *********************   NAVBAR   ******************************* -->
-
-<!-- <div class="header">
-     <div class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-               <a class="navbar-brand">Parking_Lot</a>
+               <a class="navbar-brand" href="#"><img src="logo.png" alt="">Parking_Lot</a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                </button>
-               <div class="collapse navbar-collapse" id="navbarNav">
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                          <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                              <a class="nav-link" aria-current="page" href="#">Home</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#abo">About Us</a>
+                              <a class="nav-link" href="#about">About Us</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#cnt">Contact Us</a>
+                              <a class="nav-link" href="#contact">Contact</a>
                          </li>
                     </ul>
                </div>
           </div>
      </div>
-</div> -->
+          <div id="header">
+               
+               <div class="hero">
+                    <div class="container-fluid">
+                         <div class="row" align="center">
+                              <div class="col-lg-4" align="center">
+                                   <div class="fbox">
+                                        <form action="#data">
+                                             <table class="table">
+                                                  <thead>
+                                                       <tr align="center">
+                                                            <th colspan="2">
+                                                                 <h3>FILL YOUR DEATILS</h3>
+                                                            </th>
+                                                       </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                       <tr>
+                                                            <td>Name</td>
+                                                            <td><input type="text" required placeholder="coustmor name"></td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Vehicle Name</td>
+                                                            <td><input type="text" required placeholder="vehicle name"></td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Vehicle Number</td>
+                                                            <td><input type="text" required placeholder="vehicle number"></td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Entry Date</td>
+                                                            <td><input type="date" required placeholder=""></td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Exit Date</td>
+                                                            <td><input type="date" required placeholder=""></td>
+                                                       </tr>
+                                                       <tr align="center">
+                                                            <td colspan="2"><input type="submit" id="btn"></td>
+                                                       </tr>
+                                                  </tbody>
+                                             </table>
+                                        </form>
+                                   </div>
+                              </div>
+                              <div class="col-lg-2"></div>
+                              <div class="col-lg-4 d-none d-lg-block">
+                                   <div class="txtbox" align="center">
+                                        <h1>Parking Lot Managment System <br> Store Your Parking Details</h1>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- ******************************************************************************** -->
+          <div class="data" align="center">
+               <div class="container-fluid">
+                    <div class="row">
+                         <div class="col" id="pdata">
+                              <h1>ALL PRIVIOUS PARKING DETAILS</h1>
+                         </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                         <div class="col" id="about">
+                              <h1><u>-:- About Us -:-</u></h1>
+                              <p><b>Parking Lot Management System</b>, This project will feature registrations of
+                                   Vehicle on the parking lot with keeping their number plate, name and entry and exit
+                                   timing and also list all the Vehicle in the parking lot. </p>
+                         </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                         <div class="col" id="contact">
+                              <h1><u>-:- Contact Us -:-</u></h1>
+                              <h6>Parking Lot Manager</h6>
+                              <h6><i class="bi bi-telephone-fill"></i> +91 XXXXXXXXXX</h6>
+                              <h6><i class="bi bi-envelope-fill"></i> parkinglot@gmail.com</h6>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <div id="footer" align="center">
+               <footer>
+                    <div class="container-fluid">
+                         Designed and Developed by <cite>@Akshay Upadhayay</cite>
+                    </div>
+                    <div class="sologo">
+                         <a class="bi bi-facebook" href="#"></a>
+                         <a class="bi bi-twitter" href="#"></a>
+                         <a class="bi bi-youtube" href="#"></a>
+                         <a class="bi bi-instagram" href="#"></a>
+                    </div>
+               </footer>
+          </div>
+
+</body>
+
+</html>
