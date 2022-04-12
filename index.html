@@ -14,6 +14,7 @@
 
 
      <title>Parking_Lot</title>
+     <script src="script.js"></script>
      <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,8 +23,8 @@
           <div class="container-fluid">
                <a class="navbar-brand" href="#"><img src="logo.png" alt="">Parking_Lot</a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -41,104 +42,178 @@
                </div>
           </div>
      </div>
-          <div id="header">
-               
-               <div class="hero">
-                    <div class="container-fluid">
-                         <div class="row" align="center">
-                              <div class="col-lg-4" align="center">
-                                   <div class="fbox">
-                                        <form action="#data">
-                                             <table class="table">
-                                                  <thead>
-                                                       <tr align="center">
-                                                            <th colspan="2">
-                                                                 <h3>FILL YOUR DEATILS</h3>
-                                                            </th>
-                                                       </tr>
-                                                  </thead>
-                                                  <tbody>
-                                                       <tr>
-                                                            <td>Name</td>
-                                                            <td><input type="text" required placeholder="coustmor name"></td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>Vehicle Name</td>
-                                                            <td><input type="text" required placeholder="vehicle name"></td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>Vehicle Number</td>
-                                                            <td><input type="text" required placeholder="vehicle number"></td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>Entry Date</td>
-                                                            <td><input type="date" required></td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>Exit Date</td>
-                                                            <td><input type="date" required ></td>
-                                                       </tr>
-                                                       <tr align="center">
-                                                            <td colspan="2"><input type="submit" id="btn"></td>
-                                                       </tr>
-                                                  </tbody>
-                                             </table>
-                                        </form>
-                                   </div>
-                              </div>
-                              <div class="col-lg-2"></div>
-                              <div class="col-lg-4 d-none d-lg-block">
-                                   <div class="txtbox" align="center">
-                                        <h1>Parking Lot Managment System <br> Store Your Parking Details</h1>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
+     <div id="header">
 
-          <!-- ******************************************************************************** -->
-          <div class="data" align="center">
+          <div class="hero">
                <div class="container-fluid">
-                    <div class="row">
-                         <div class="col" id="pdata">
-                              <h1>ALL PRIVIOUS PARKING DETAILS</h1>
+                    <div class="row" align="center">
+                         <div class="col-lg-4" align="center">
+                              <div class="fbox">
+                                   <form action="#data">
+                                        <table class="table">
+                                             <thead>
+                                                  <tr align="center">
+                                                       <th colspan="2">
+                                                            <h3>FILL YOUR DEATILS</h3>
+                                                       </th>
+                                                  </tr>
+                                             </thead>
+                                             <tbody>
+                                                  <tr>
+                                                       <td>Name</td>
+                                                       <td>
+                                                            <input type="text" name="name" id="name"
+                                                                 placeholder="Enter Name"
+                                                                 onkeyup="checkContent('name','nameError')" required
+                                                                 autocomplete="off">
+                                                            <span id="nameError"
+                                                                 style="color: red;font-size: smaller;visibility: hidden;">Please
+                                                                 Enter Your Name.</span>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Vehicle Name</td>
+                                                       <td>
+                                                            <input type="text" name="vehname" id="vehname"
+                                                                 placeholder="Enter Vehicle Name"
+                                                                 onkeyup="checkContent('vehname','vehnameError')"
+                                                                 required autocomplete="off">
+                                                            <span id="vehnameError"
+                                                                 style="color: red;font-size: smaller;visibility: hidden;">Please
+                                                                 Enter Vehicle Name.</span>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Vehicle Number</td>
+                                                       <td>
+                                                            <input type="text" name="vehnum" id="vehnum"
+                                                                 placeholder="Format should be VW-17-LP-6718, TR-00-EW-7156, etc."
+                                                                 onkeyup="checkContent('vehnum','vehnumError')" required
+                                                                 autocomplete="off">
+                                                            <span id="vehnumError"
+                                                                 style="color: red;font-size: smaller;visibility: hidden;">Please
+                                                                 Enter License Plate Number.</span>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Entry Date</td>
+                                                       <td>
+                                                            <input type="date" name="endate" id="endate"
+                                                                 onkeyup="checkContent('endate','endateError')" required
+                                                                 autocomplete="off">
+                                                            <span id="endateError"
+                                                                 style="color: red;font-size: smaller;visibility: hidden;">Please
+                                                                 Enter Valid Entry Date.</span>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Exit Date</td>
+                                                       <td>
+                                                            <input type="date" name="exdate" id="exdate"
+                                                                 onkeyup="checkContent('exdate','exdateError')" required
+                                                                 placeholder="" autocomplete="off">
+                                                            <span id="exdateError"
+                                                                 style="color: red;font-size: smaller;visibility: hidden;">Please
+                                                                 Enter Valid Exit Date.</span>
+                                                       </td>
+                                                  </tr>
+                                                  <tr align="center">
+                                                       <td colspan="2"><input type="submit" id="btn" value="Register"
+                                                                 onclick="submitHandler()"></td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </form>
+                              </div>
                          </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                         <div class="col" id="about">
-                              <h1><u>-:- About Us -:-</u></h1>
-                              <p><b>Parking Lot Management System</b>, This project will feature registrations of
-                                   Vehicle on the parking lot with keeping their number plate, name and entry and exit
-                                   timing and also list all the Vehicle in the parking lot. </p>
-                         </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                         <div class="col" id="contact">
-                              <h1><u>-:- Contact Us -:-</u></h1>
-                              <h6>Parking Lot Manager</h6>
-                              <h6><i class="bi bi-telephone-fill"></i> +91 XXXXXXXXXX</h6>
-                              <h6><i class="bi bi-envelope-fill"></i> parkinglot@gmail.com</h6>
+                         <div class="col-lg-2"></div>
+                         <div class="col-lg-4 d-none d-lg-block">
+                              <div class="txtbox" align="center">
+                                   <h1>Parking Lot Managment System <br> Store Your Parking Details</h1>
+                              </div>
                          </div>
                     </div>
                </div>
           </div>
+     </div>
 
-          <div id="footer" align="center">
-               <footer>
-                    <div class="container-fluid">
-                         Designed and Developed by <cite>@Akshay Upadhayay</cite>
+     <!-- ******************************************************************************** -->
+     <div class="data" align="center">
+          <div class="container-fluid">
+               <div class="row">
+                    <div class="col" id="pdata">
+                         <h1>ALL PRIVIOUS PARKING DETAILS</h1>
+                         <div class="container car-table">
+                              <div class="row">
+                                   <div class="col-12" align="center">
+                                        <table class="car-list" id="car-list">
+                                             <thead style="background-color: rgb(49, 148, 247);text-align: center;">
+                                                  <th style="padding: 10px;">Name</th>
+                                                  <th>Vehicle Name</th>
+                                                  <th>License Plate Number</th>
+                                                  <th>Entry Date</th>
+                                                  <th>Exit Date</th>
+                                                  <th>Remove</th>
+                                             </thead>
+                                             <tbody>
+
+                                             </tbody>
+                                        </table>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
-                    <div class="sologo">
-                         <a class="bi bi-facebook" href="#"></a>
-                         <a class="bi bi-twitter" href="#"></a>
-                         <a class="bi bi-youtube" href="#"></a>
-                         <a class="bi bi-instagram" href="#"></a>
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="col" id="about">
+                         <h1><u>-:- About Us -:-</u></h1>
+                         <p><b>Parking Lot Management System</b>, This project will feature registrations of
+                              Vehicle on the parking lot with keeping their number plate, name and entry and exit
+                              timing and also list all the Vehicle in the parking lot. </p>
                     </div>
-               </footer>
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="col" id="team">
+                         <h1><u>-:- Team Members -:-</u></h1>
+                         <h6>Akshay Upadhayay</h6>
+                         <h6>Pratyush Panda</h6>
+                         <h6>Manjusha S N</h6>
+                         <h6>Puneeth Reddy</h6>
+                         <h6>Dibyashree Nanda</h6>
+                         <h6>Sumanthreddy Pagala</h6>
+                    </div>
+               </div>
+               <hr>
+               <div class="row">
+                    <div class="col" id="contact">
+                         <h1><u>-:- Contact Us -:-</u></h1>
+                         <h6>Parking Lot Manager</h6>
+                         <h6><i class="bi bi-telephone-fill"></i> +91 XXXXXXXXXX</h6>
+                         <h6><i class="bi bi-envelope-fill"></i> parkinglot@gmail.com</h6>
+                    </div>
+               </div>
           </div>
+     </div>
+     <!-- **************************************************************************************** -->
+     <div id="footer" align="center">
+          <footer>
+               <div class="container-fluid">
+                    Designed and Developed by <cite>@Akshay Upadhayay</cite>
+               </div>
+               <div class="sologo">
+                    <a class="bi bi-facebook" href="#"></a>
+                    <a class="bi bi-twitter" href="#"></a>
+                    <a class="bi bi-youtube" href="#"></a>
+                    <a class="bi bi-instagram" href="#"></a>
+               </div>
+          </footer>
+     </div>
+
+     <!-- ######################################################################################## -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
 </body>
 
